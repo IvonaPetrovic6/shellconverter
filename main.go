@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"goexetoshell/goshellconv"
+	"github.com/Batcherss/shellconverter/goshellconv"
 )
 
 func printUsage() {

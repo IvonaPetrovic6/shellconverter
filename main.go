@@ -9,7 +9,8 @@ import (
 )
 
 func printUsage() {
-	fmt.Println("Usage: goexetoshell -i <input_file> -o <output_file> -crypt <passphrase> -opt")
+	brainrootamobea()
+	fmt.Println("Usage: shellconverter -i <input_file> -o <output_file> -crypt <passphrase> -opt")
 	fmt.Println()
 	fmt.Println("Arguments:")
 	fmt.Println("-i <input_file>    Input file (e.g., .exe or .dll)")
@@ -18,10 +19,28 @@ func printUsage() {
 	fmt.Println("-opt                Optional flag to optimize shellcode (removes commas)")
 	fmt.Println()
 	fmt.Println("Example:")
-	fmt.Println("goshellconv -i input.exe -o output.bin -crypt=\"mysecurepassword\" -opt")
+	fmt.Println("shellconverter -i input.exe -o output.bin -crypt=\"mysecurepassword\" -opt")
+}
+
+func brainrootamobea() {
+	banner := []string{
+		"  _________.__           .__  .__                                ",
+		" /   _____/|  |__   ____ |  | |  |       ____  ____   _______  __",
+		" \_____  \ |  |  \_/ __ \|  | |  |     _/ ___\/  _ \ /    \  \/ /",
+		" /        \|   Y  \  ___/|  |_|  |__   \  \__(  <_> )   |  \   / ",
+		"/_______  /|___|  /\___  >____/____/ /\ \___  >____/|___|  /\_/  ",
+		"         \/      \/     \/            \/     \/           \/      ",
+		"   -brainroot amobea f#cked our brain.",
+	}
+
+	for _, line := range banner {
+		fmt.Println(line)
+	}
 }
 
 func main() {
+	brainrootamobea()
+
 	inputFile := flag.String("i", "", "Input file (.exe or .dll)")
 	outputFile := flag.String("o", "", "Output file (.bin)")
 	passphrase := flag.String("crypt", "", "Encryption passphrase (AES)")
@@ -40,13 +59,13 @@ func main() {
 		log.Fatal(err)
 	}
 
-	fmt.Println("[#] converted 1/2")
+	fmt.Println("[#] converted to shellcode..")
 
 	err = os.WriteFile(*outputFile, shellcode, 0644)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	fmt.Println("[#] converted 1/2")
+	fmt.Println("[#] writed file - success.")
 	fmt.Println("[+] success convertation to shellcode x64.")
 }

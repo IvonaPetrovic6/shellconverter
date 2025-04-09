@@ -26,10 +26,11 @@ A simple and fast `.exe` / `.dll` to raw `.bin` shellcode converter with optiona
 ```
 goexetoshell -i <input_file> -o <output_file> [-crypt <passphrase>] [-opt]
 ```
--i	Input file (.exe or .dll)
--o	Output file (.bin shellcode)
--crypt	(Optional) AES encryption passphrase
--opt	(Optional) Optimizes shellcode (removes commas)
+- What it does?:
+  - `-i	Input file (.exe or .dll)`
+  - `-o	Output file (.bin shellcode)`
+  - `-crypt	(Optional) AES encryption passphrase`
+  - `-opt	(Optional) Optimizes shellcode (removes commas)`
 
 💡 Example
 ```

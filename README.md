@@ -24,7 +24,7 @@ A simple and fast `.exe` / `.dll` to raw `.bin` shellcode converter with optiona
 
 🚀 Usage
 ```
-goexetoshell -i <input_file> -o <output_file> [-crypt <passphrase>] [-opt]
+shellconverter -i <input_file> -o <output_file> [-crypt <passphrase>] [-opt]
 ```
 - What it does?:
   - `-i	Input file (.exe or .dll)`
@@ -34,6 +34,6 @@ goexetoshell -i <input_file> -o <output_file> [-crypt <passphrase>] [-opt]
 
 💡 Example
 ```
-goexetoshell -i input.exe -o output.bin -crypt="mysecurepassword" -opt
+shellconverter -i input.exe -o output.bin -crypt="mysecurepassword" -opt
 ```
 The resulting output.bin contains raw shellcode, ready for use in loaders or injection tools.

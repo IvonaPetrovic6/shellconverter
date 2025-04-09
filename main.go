@@ -9,7 +9,7 @@ import (
 )
 
 func printUsage() {
-	fmt.Println("Usage: goshellconv -i <input_file> -o <output_file> -crypt <passphrase> -opt")
+	fmt.Println("Usage: goexetoshell -i <input_file> -o <output_file> -crypt <passphrase> -opt")
 	fmt.Println()
 	fmt.Println("Arguments:")
 	fmt.Println("-i <input_file>    Input file (e.g., .exe or .dll)")

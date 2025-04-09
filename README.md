@@ -5,7 +5,7 @@ The author is not responsible for any misuse or illegal activity.
 # 🐚 goexectoshell / goshellconv
 
 [![Go](https://img.shields.io/badge/Go-1.22-blue.svg)](https://golang.org)  
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey)]()  
+[![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)]()  
 [![License](https://img.shields.io/badge/License-MIT-green.svg)]()  
 [![Shellcode](https://img.shields.io/badge/Output-Shellcode%20(.bin)-orange)]()
 
